@@ -1,0 +1,6 @@
+﻿dotnet --list-sdks
+--------------------------------
+add-migration CreateCustomerDB
+
+update-database –verbose
+
