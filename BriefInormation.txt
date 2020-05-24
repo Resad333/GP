@@ -1,0 +1,13 @@
+TECH STACK: ASpNetCoreWebApi, EnityFramewokCore(InMemory[it's enabled],MSSQL),
+            XUnit,Moq are applied to some parts of application,
+            AspNetCoreTestServer are applied to some endpoints for api integration tests,
+            Swagger for api documentation
+
+1) A customer can have 2 type address(REGISTRATION and ACTUAL).
+   And that's why relation one to many between 'Customers' and 'CustomerAddresses'
+
+2) A customer might have many specific fields which dependent on brand.
+   Although For current brands it's one field('Personal_Number'and 'Favorite_football_team') but new brands(clients) might have more than one field.
+   And that's why relation has been chosen one to many between 'Customers' and 'CustomerFields'.
+
+3) URI based ApiVersioning is used for supporting many clients
